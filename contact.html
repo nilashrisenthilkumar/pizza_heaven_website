@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Pizza Heaven</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            overflow: hidden;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+            margin-top: 80px;
+            background: rgba(255, 255, 255, 0.9);
+            padding-top: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 8px;
+        }
+        .contact-info p, .social-media p {
+            margin: 10px 0;
+        }
+        .social-media img {
+            width: 40px;
+            height: 40px;
+            margin: 0 10px;
+        }
+        .message-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .message-form input, .message-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .message-form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: orange;
+            border: none;
+            border-radius: 4px;
+            color: black;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" style="text-decoration: none; color: #ffffff; padding-left: 1400px;"><img src="https://cdn2.vectorstock.com/i/1000x1000/02/46/home-icon-web-pageui-symbol-vector-23190246.jpg" width="50" height="60"></a>
+    <div class="container">
+        <center><h2>Contact Us</h2></center>
+        <div style="padding-left: 100px;">
+            <p><strong>Address:</strong> 123 Pizza Lane, Food City, Rome 45678, Italy</p>
+            <p><strong>Email:</strong> <a href="mailto:info@pizzaheaven.com">info@pizzaheaven.com</a></p>
+            <p><strong>Call:</strong> 123 456 789</p>
+        </div>
+
+        <div class="message-form">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <center>
+            <p>Follow Us:</p>
+            <a href="url">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH1LG0rJXAY6gGIXxnRyRnKF74yz9NcJfY8g&s" alt="Social Media">
+            </a>
+        </center>
+    </div>
+</body>
+</html>

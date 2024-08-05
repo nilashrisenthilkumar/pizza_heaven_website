@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>PIZZA HEAVEN</title>
+    <style>
+            #header{
+                    position: fixed;
+                    background-color: rgb(22, 21, 23);
+                    width:100%;
+            }
+            nav{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-left: 20px;
+                    padding: 20px;
+            }
+            body{
+                background-color: rgb(22, 21, 23);
+                color: white;
+            }
+            a:link, a:visited {
+                text-decoration: none;
+                color: white;
+            }
+            a:hover {
+                color: orange;
+            }
+            .order_now{
+                background-color: orange;
+                border: none;
+                color: while;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            .order__now{
+                background-color: orange;
+                border: none;
+                color: while;
+                padding: 8px 10px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 8px;
+                cursor: pointer;
+            }
+            .order__now:hover 
+            {
+            background-color: white;
+            color: orange;
+            }
+            .order_now:hover 
+            {
+            background-color: white;
+            color: orange;
+            }
+            #table1{
+                padding-left: 100px;
+            }
+            img{
+                border-radius: 50%;
+            }
+            .zoom {
+                padding: 50px;
+                transition: transform .2s;
+                width: 500px;
+                height: 500px;
+            }
+            .zoom:hover {
+                transform: scale(0.75);
+            }
+    </style>
+    </head>
+    <body>
+        <div id="header">
+            <h2 style="margin-left: 1200px;color: white;">PIZZA HEAVEN</h2>
+            <nav>
+                <a href="home.html" style="color: white;margin-left: 780px;">ABOUT</a>
+                <a href="menu.html" style="color: white">MENU</a>
+                <a href="blog.html" style="color: white">BLOG</a>
+                <a href="contact.html" style="color: white;">CONTACT US</a>
+                <a href="menu.html" style="color: white;"><input type="Button" value="ORDER NOW" class="order__now"></a>
+            </nav>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <table>
+            <tr>
+                <td>
+                    <img id="table1" class="zoom" width="500px" height="500px"
+                    src="https://content3.jdmagicbox.com/v2/comp/mumbai/l8/022pxx22.xx22.200413233010.b8l8/catalogue/bombay-pizza-company-mumbai-central-mumbai-pizza-outlets-0f237sbk9v.jpg">
+                </td>
+                <td>
+                    <div >
+                        <h1>ENJOY OUR DELICIOUS PIZZA ANYWHERE YOU LIKE</h1>
+                        <p style="font-size: large;">
+                            "Enjoy a Slice of Sustainability! Indulge in our delicious pizzas made with locally-sourced, organic ingredients. Every bite supports eco-friendly practices and community initiatives. Taste the responsibility with our fresh, artisanal pizzas!"
+                        </p>
+                        <center>
+                            <a href="menu.html" style="color: white;"><input type="Button" value="ORDER NOW" class="order_now"></a>
+                        </center>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

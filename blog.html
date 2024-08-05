@@ -1,0 +1,93 @@
+<html>
+<head>
+    <style>
+        .background {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-image: url("https://images.pexels.com/photos/245240/pexels-photo-245240.jpeg?cs=srgb&dl=pexels-atbo-66986-245240.jpg&fm=jpg");
+            background-size: cover;
+            background-position: center;
+            filter: blur(10px);
+            z-index: -1;
+        }
+      
+        .text-container {
+            color:rgb(255, 255, 204);
+            color: #ffffff;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+        textarea{
+            border-radius: 20px;
+            text-align: center;
+            padding-top: 10px;
+            background-color: white;
+            color: black;
+        }
+        button{
+            border-radius: 20px;
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+  
+<body>
+    <div class="background"></div>
+    <div class="text-container">
+        <a href="index.html" style="text-decoration: none;color: #ffffff;padding-left: 1300px;"><img src="https://cdn2.vectorstock.com/i/1000x1000/02/46/home-icon-web-pageui-symbol-vector-23190246.jpg" width="50" height="60"></a>
+        <center>
+        <h1>PIZZA HEAVEN BLOG</h1><br>
+        <h3>The Journey of Pizza Heaven: From Humble Beginnings to a Community Staple</h3>
+        <p>Welcome to Pizza Heaven's blog! Today, we're diving into the heartwarming story of how Pizza Heaven 
+            became the beloved pizzeria it is today. Founded in 1990 by Maria and Giovanni Russo, Pizza Heaven started as a small,
+            family-run shop with a passion for authentic Italian cuisine. With just a single oven and a handful of cherished family recipes,
+            they aimed to create more than just pizza they wanted to create an experience that brings people together. Over the years, 
+            their commitment to quality, sustainability, and community has transformed Pizza Heaven into a cherished institution. 
+            Join us as we explore the milestones and memories that have shaped our journey.</p>
+        <h3>Culinary Innovations: Pizza Heaven's Unique Flavors</h3>
+        <p>While we cherish our traditional Italian roots, Pizza Heaven is always looking to innovate and delight our 
+            customers with new flavors. Our chefs are constantly experimenting with fresh, unique ingredients to create pizzas that you won't
+            find anywhere else. From our Truffle Mushroom pizza to the Fig & Prosciutto delight, we offer a range of gourmet options 
+            that cater to adventurous palates. We also have a variety of vegan and vegetarian options that have been widely praised 
+            for their taste and creativity.In this section, we'll share some of our favorite recipes and the stories behind them.</p>
+        <h3>Looking to the Future: Continuing Our Legacy</h3>
+        <p>As Pizza Heaven looks to the future, we remain committed to the values that have guided us from the beginning. We continue to prioritize sustainability, innovation, and community engagement, while also exploring new ways to grow and evolve. We’re excited to introduce more international flavors to our menu and expand our locations to bring our beloved pizzas to even more people. Maria and Giovanni’s children, now part of the business, bring fresh ideas and renewed energy to ensure that Pizza Heaven remains a cherished institution for generations to come.
+
+            <br>Thank you for being a part of our journey. Stay tuned for more stories, updates, and delicious recipes from Pizza Heaven!</p>
+    <br><br><br><br><br>
+    <form onsubmit="return printInput(event)">
+        <footer>
+        <textarea id="userInput" rows="2" cols="35" placeholder="Comments"></textarea><br>
+        <button type="submit">SEND</button>
+        </footer>
+        </center>
+        <h3 style="padding-left: 100px;color:white;">COMMENT SECTION</h3>
+        <p style="color:white;padding-left: 100px;">Wishing the best for this wonderful pizza heaven</p>
+        <p style="color:white;padding-left: 100px;">Would definetely visit this place with family again a good spot worth the money and taste that you can never forget</p>
+        <p id="output" style="color:white;padding-left: 100px;"></p>
+    </form>
+    <script>
+        function printInput(event) {
+            event.preventDefault(); 
+            const userInput = document.getElementById('userInput').value;
+            document.getElementById('output').textContent = userInput;
+        }
+    </script>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+    
